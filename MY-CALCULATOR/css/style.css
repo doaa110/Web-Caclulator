@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calculator {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.calculator .output {
+    background-color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    width: 440px;
+    height: 100%;
+    margin: auto;
+    /* width: calc(80% /2); */
+    /* width: 440px;
+    padding: 35px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto; */
+    /* border-radius: 4px; */
+}
+
+.display-1 {
+    /* background-color: #00AAFF; */
+    opacity: 0.6;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.temp-result {
+    background-color: #00AAFF;
+    position: absolute;
+    bottom: 5px;
+    color: #000;
+    font-weight: 700;
+    left: 10;
+    font-size: 30px;
+    opacity: 0.6;
+    /* padding: 5px 10px; */
+}
+
+/* .calculator .output .current-operand {
+    margin-left: 20px;
+} */
+
+/* .calculator .output .result-output {
+    display: flex;
+    flex-direction: column;
+    background-color: #00AAFF;
+} */
+
+.calculator .row1,
+.special,
+.row2,
+.row3 {
+    display: flex;
+    /* width: calc(800px/4); */
+    justify-items: center;
+    justify-content: center;
+}
+
+.calculator button {
+    height: 95px;
+    width: 110px;
+    /* width: calc(80% /4); */
+    background-color: rgba(255, 255, 255, 0.75);
+    opacity: 0.75;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.calculator .special .special-button {
+    width: 220px;
+    /* width: calc(80% /4) !important; */
+    flex-wrap: wrap;
+}
+
+.calculator button:hover {
+    background-color: #fff;
+    opacity: 0.85;
+}
+
+.special-button {
+    background-color: black;
+    /* color: #00FF6C; */
+}
